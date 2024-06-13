@@ -29,7 +29,7 @@ function App() {
 
         {/* Base Page  */}
         <Route path="*" element={<PageNotFound />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/react-ecom-app" element={<Home />} />
 
         {/* Login / Signup Page  */}
         <Route path="login" element={<LogRegComp />} />
