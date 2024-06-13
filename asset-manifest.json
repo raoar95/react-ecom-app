@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/raoar95/react-ecom-app/static/css/main.67693014.css",
-    "main.js": "/raoar95/react-ecom-app/static/js/main.e34e36bc.js",
+    "main.js": "/raoar95/react-ecom-app/static/js/main.b8693f1b.js",
     "static/media/vivo.jpg": "/raoar95/react-ecom-app/static/media/vivo.9ad0c3bec4a86a3e5098.jpg",
     "static/media/Lc-laptop.png": "/raoar95/react-ecom-app/static/media/Lc-laptop.4654221d3c5b78fce665.png",
     "static/media/sph-lc.png": "/raoar95/react-ecom-app/static/media/sph-lc.94c9c6960982ff1cdbbe.png",
@@ -9,10 +9,10 @@
     "static/media/logo.png": "/raoar95/react-ecom-app/static/media/logo.41b4cc53abc894cfb539.png",
     "index.html": "/raoar95/react-ecom-app/index.html",
     "main.67693014.css.map": "/raoar95/react-ecom-app/static/css/main.67693014.css.map",
-    "main.e34e36bc.js.map": "/raoar95/react-ecom-app/static/js/main.e34e36bc.js.map"
+    "main.b8693f1b.js.map": "/raoar95/react-ecom-app/static/js/main.b8693f1b.js.map"
   },
   "entrypoints": [
     "static/css/main.67693014.css",
-    "static/js/main.e34e36bc.js"
+    "static/js/main.b8693f1b.js"
   ]
 }
