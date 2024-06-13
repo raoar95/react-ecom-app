@@ -28,8 +28,8 @@ function App() {
        <Routes>
 
         {/* Base Page  */}
+        <Route exact path="/" element={<Home />} />
         <Route path="*" element={<PageNotFound />} />
-        <Route path="/react-ecom-app" element={<Home />} />
 
         {/* Login / Signup Page  */}
         <Route path="login" element={<LogRegComp />} />
