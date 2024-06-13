@@ -1,0 +1,2387 @@
+/* GOOGLE FONTS  */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap");
+
+/* font-family: "Poetsen One", sans-serif; */
+/* font-family: "Roboto", sans-serif; */
+
+/* ROOT CSS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --headColor: whitesmoke;
+  --brandColor: #f93232;
+  --headfont: "Poetsen One", sans-serif;
+  --textfont: "Montserrat", sans-serif;
+  --myBorderColor: #70707061;
+}
+
+/* GLOBAL CSS */
+
+body {
+  font-family: var(--textfont);
+  font-weight: 500;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.flex-space,
+.flex-center,
+.flex-evenly,
+.flex-start,
+.flex-end {
+  display: flex;
+  align-items: center;
+}
+
+.flex-space {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+.ellipsis {
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.twoLineElipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mg-auto {
+  margin: auto;
+}
+
+.flow-hidden {
+  overflow: hidden;
+}
+
+.flow-scroll {
+  overflow: scroll;
+}
+
+.img-res {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.myBtn {
+  width: 15rem;
+  text-align: center;
+  border: none;
+  border-radius: 25rem;
+  padding: 0.8rem 0;
+  color: #fff;
+  background-color: var(--brandColor);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Div Center  */
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Form CSS  */
+
+input:checked + label {
+  font-weight: 700;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: var(--brandColor);
+}
+
+/* Remove */
+
+.myflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* SAME CSS WRITTEN HERE */
+
+.nav,
+.navSearchBar input {
+  background-color: var(--headColor);
+}
+
+.navAddress,
+.navCart,
+.fa-search {
+  cursor: pointer;
+}
+
+.nav svg,
+.head-top svg {
+  color: var(--brandColor);
+}
+
+/* NAVBAR CSS START HERE */
+
+.nav {
+  padding: 0.4em 1.25rem;
+  z-index: 6;
+}
+
+.nav svg {
+  font-size: 1.25rem;
+  margin-right: 6px;
+}
+
+.navFlexItem1 img {
+  width: 175px;
+}
+
+.nav .fa-chevron-down {
+  margin-right: 0;
+  margin-left: 0.6rem;
+}
+
+.navAddress {
+  flex-shrink: 0;
+  width: 230px;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.navAddress span {
+  width: 70%;
+  text-align: center;
+}
+
+.navAddress svg {
+  margin: 0px;
+}
+
+.addressArrow {
+  stroke-width: 0.5rem;
+  font-size: 2rem !important;
+  margin-top: 0.2rem !important;
+}
+
+.navAddress,
+.navSearchBar,
+.serchIcon {
+  border: 3px solid var(--brandColor);
+  height: 2.5rem;
+  border-radius: 1.4rem;
+}
+
+.serchIcon {
+  width: 4rem;
+  border: none;
+  background-color: var(--brandColor);
+}
+
+.serchIcon svg {
+  color: #fff;
+  margin: auto;
+}
+
+.navFlexItem2 {
+  width: 90%;
+  overflow: hidden;
+  margin: 0 1rem;
+}
+
+.navSearchBar input {
+  width: 100%;
+  font-size: 1rem;
+  margin: 0.1rem 0.7rem 0.1rem 1rem;
+  border: none;
+  outline: none;
+}
+
+.openbtn {
+  padding: 0.6rem 0.6rem 0.6rem 0;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  background: none;
+  margin-bottom: 0.3rem;
+  color: var(--brandColor);
+}
+
+.navFlexItem3 span,
+.navFlexItem3 span {
+  color: #564b4b;
+}
+
+.navCart {
+  position: relative;
+}
+
+.cartCircle {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  background: #000;
+  color: #fff !important;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.navCart,
+.navLogReg {
+  width: auto !important;
+  overflow: visible;
+}
+
+.headerLeftSec {
+  justify-content: flex-start;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.resAddSec {
+  display: none;
+}
+
+.navFlexItem2,
+.navFlexItem2 input,
+.navFlexItem3 {
+  font-weight: 600;
+}
+
+.navFlexItem3 {
+  gap: 12px;
+}
+
+/* NAVBAR CSS END HERE */
+
+/* TOOLTIP CSS START HERE*/
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.tooltip-text,
+.tooltip-text::after {
+  position: absolute;
+  cursor: default;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #323232;
+  width: max-content;
+  padding: 1rem;
+  border-radius: 16px;
+  z-index: 1;
+  top: 50px;
+  left: 35px;
+  transition: all ease 0.5s;
+}
+
+.tooltip-text,
+.tooltip-text a {
+  color: #fff !important;
+}
+
+.tooltip-text a {
+  text-decoration: underline;
+}
+
+.tooltip-text::after {
+  content: "";
+  background: #323232;
+  width: 32px;
+  height: 32px;
+  z-index: 1;
+  transform: rotate(45deg);
+  left: 46px;
+  bottom: 90px;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+
+/* TOOLTIP CSS END HERE*/
+
+/* POPUP MODAL CSS */
+
+.myModalActive,
+.popupModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  display: none;
+  animation: fadeIn 0.5s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* POPUP CSS START HERE */
+
+.modalContentBox {
+  background: #fff;
+  width: 26rem;
+  padding: 1rem 1rem 1.5rem;
+  border-radius: 1rem;
+  cursor: default;
+}
+
+.modalHeadSec {
+  margin-bottom: 0.8rem;
+}
+
+.modalHeadSec h2 {
+  font-family: var(--headfont);
+  font-size: 1.8rem;
+}
+
+.DescText {
+  padding-bottom: 1.5rem;
+}
+
+.modalClose svg {
+  font-size: 32px !important;
+  color: var(--brandColor);
+}
+
+.modalContentSec span {
+  padding-left: 0.8rem;
+}
+
+/* POPUP CSS END HERE */
+
+/* SIDEPANEL CSS START HERE*/
+
+.sidepanel {
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  height: 100%;
+  top: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.nav .sidepanel {
+  left: 0;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: -7px;
+  right: 25px;
+  font-size: 36px;
+  color: #fff;
+}
+
+.head-top {
+  display: flex;
+}
+
+.head-top svg {
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 25px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+}
+
+.first-t {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  padding: 0px 10px;
+}
+
+.head-top a {
+  font-size: 14px;
+  color: #fff;
+  padding: 0px;
+}
+
+.head-bottom {
+  display: flex;
+  padding: 15px 0 0 0;
+}
+
+.head-bottom a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #fff;
+  width: 132px;
+  padding: 6px 6px;
+  text-align: center;
+  margin-right: 11px;
+}
+
+.top-p {
+  background-color: #f93232;
+  padding: 16px 20px;
+}
+
+.top-p a:hover {
+  color: #fff;
+}
+
+.side-sec {
+  background: var(--border-silver);
+  padding: 0 0 20px 0;
+}
+
+.side-sec a:hover {
+  color: #000;
+}
+
+.side-box h5 a {
+  color: #212529;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding-top: 16px;
+  padding-bottom: 0px;
+  margin: 0px 0px 0 -11px;
+}
+
+.side-box {
+  position: relative;
+}
+
+.side-box::after {
+  width: 380px;
+  height: 2px;
+  background: #dbdbdb;
+  content: "";
+  position: absolute;
+  bottom: -21px;
+  left: 0;
+}
+
+.side-box ul {
+  margin: 20px 0;
+}
+
+.side-box ul li {
+  list-style: none;
+  display: block;
+}
+
+.side-box::after:last-child {
+  display: none;
+}
+
+.side-box ul li a {
+  font-size: 16px;
+  color: #242424;
+  font-weight: 500;
+  margin: 20px 0 0 20px;
+  padding: 0;
+}
+
+.side-box h4 {
+  font-size: 18px;
+  padding: 28px 23px 0 23px;
+  font-weight: 600;
+}
+
+.side-box h4 i {
+  float: right;
+  font-size: 16px;
+}
+
+.appSecSidebar {
+  margin-top: 10px;
+}
+
+.appSecSidebar img {
+  width: 65%;
+  margin-left: -7px;
+}
+
+.appSecSidebar a {
+  padding: 0 8px 0 30px;
+}
+
+/* SIDEPANEL CSS END HERE*/
+
+/* SLIDER CSS START HERE */
+
+.slideContainer {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* [Internet Explorer 10+] hide Scroll bar */
+  scrollbar-width: none; /* [Firefox] hide Scroll bar */
+}
+
+.slideContainer::-webkit-scrollbar {
+  display: none; /* [Safari and Chrome] hide Scroll bar */
+}
+
+.slideContainer:hover .slideIcon {
+  display: block;
+}
+
+.slideIcon {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  color: var(--brandColor);
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 0;
+  padding: 1.2rem 0.4rem;
+  transition: 0.5s ease;
+  user-select: none;
+  top: 50%;
+  transform: translate(0%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.next {
+  right: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+/* Slide Animation */
+
+.slide-left {
+  animation: slideLeft 0.5s forwards;
+}
+
+.slide-right {
+  animation: slideRight 0.5s forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* animation: slideIn 0.5s forwards; */
+
+/* SLIDER CSS END HERE */
+
+/* HOMEPAGE COMMON CSS START HERE */
+
+.homeImgSec {
+  text-align: center;
+  width: 8.4rem;
+  flex-shrink: 0;
+}
+
+.homeImgSec img,
+.elecTopBrandBox img {
+  width: 105px;
+  margin-bottom: 5px;
+}
+
+.homeImgSec p {
+  font-size: 1.1rem;
+}
+
+.homeImgSec a:hover p {
+  color: var(--brandColor);
+  font-weight: 600;
+}
+
+.homeHead {
+  font-weight: bold;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+}
+
+.homeHead h2,
+.homeHead h3 {
+  font-family: var(--headfont);
+  font-size: 3rem;
+  padding-bottom: 0.6rem;
+}
+
+.homeHead h3 {
+  font-size: 2.2rem;
+}
+
+.homeHead hr {
+  border-bottom: 5px solid var(--brandColor);
+  width: 95px;
+  margin: auto;
+  border-radius: 4px;
+}
+
+/* HOMEPAGE HEAD CSS START HERE */
+
+/* ELECTRONIC STORE (HOMEPAGE) CSS START HERE */
+
+.topCatCont {
+  position: relative;
+  margin: 16px;
+}
+
+.topCatCont .slideIcon {
+  font-size: 18px;
+}
+
+.elecMainCatCont {
+  width: 70%;
+  margin: auto;
+}
+
+.elecFeaCatBox {
+  align-items: flex-start;
+  overflow: hidden;
+  gap: 2rem 1rem;
+}
+
+.elecFeaCatBox .homeImgSec {
+  width: 22%;
+}
+
+.elecFeaCatBox .homeImgSec img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.elecBannerSec {
+  width: 90%;
+}
+
+.elecBannerSec img {
+  width: 100%;
+}
+
+.elecTopBrandBox,
+.elecFeaCatBox {
+  margin-bottom: 2rem;
+}
+
+.elecTopBrandBox {
+  position: relative;
+}
+
+.TopBrandLogoTrack {
+  width: 100%;
+  gap: 3rem;
+  padding: 0 1rem;
+  justify-content: flex-start;
+  animation: autoScroll 60s linear infinite;
+}
+
+/* AUTO IMAGE SLIDING ANIMATION */
+
+@keyframes autoScroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.TopBrandLogoTrack:hover {
+  animation-play-state: paused;
+}
+
+.elecTopBrandBox img:hover {
+  width: 120px;
+  transition: 0.5s;
+}
+
+.elecPopuProSec .productBox {
+  flex-shrink: 0;
+}
+
+.slideWrapper {
+  position: relative;
+  margin: 0 16px;
+}
+
+/* ELECTRONIC STORE (HOMEPAGE) CSS END HERE */
+
+/* FOOTER CSS START HERE */
+
+.myfooter {
+  background: var(--headColor);
+  position: relative;
+  bottom: 0;
+  z-index: 8;
+}
+
+.footTop {
+  width: 90%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.footLogoSec img {
+  width: 18rem;
+  margin: 0 0 1.2rem -16px;
+}
+
+.footContentSec {
+  align-items: flex-start;
+}
+
+.footBox {
+  width: auto;
+}
+
+.footBox .head,
+.footBox p {
+  width: max-content;
+}
+
+.footBox .head {
+  font-family: var(--headfont);
+}
+
+.footBox .head {
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: var(--brandColor);
+  padding: 0.5rem 0.5rem 0.5rem 0.2rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  border-left: 6px solid #000;
+  border-right: 6px solid #000;
+}
+
+.footBox p {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.footBox p:hover {
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-bottom: 3px solid var(--brandColor);
+}
+
+.footAppSec {
+  margin-bottom: 1.5rem;
+}
+
+.footBox5 {
+  width: 10rem;
+}
+
+.footAppSec img {
+  width: 100%;
+  margin-bottom: 0.1rem;
+}
+
+.footAppSec img:hover {
+  width: 110%;
+}
+
+.socialIconSec svg {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #000;
+}
+
+.socialIconSec svg:hover {
+  color: var(--brandColor);
+}
+
+.footBox p:hover,
+.footAppSec img:hover,
+.socialIconSec svg {
+  transition: 0.2s;
+}
+
+.footBottom {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0.6rem 0;
+}
+
+/* FOOTER CSS START HERE */
+
+/* BREADCUMB CSS START HERE */
+
+.breadcumb-row {
+  font-size: 1.2rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.breadcumb-row .homeIcon {
+  font-size: 1.4rem;
+}
+
+.breadcumb-row a {
+  color: #000;
+}
+
+.breadcumb-row svg {
+  flex-shrink: 0;
+}
+
+.breadcumb-row span,
+.breadcumb-row a:hover {
+  color: var(--brandColor);
+}
+
+.breadcumb-row span {
+  font-weight: 600;
+}
+
+.breadcumb-row span,
+.breadcumb-row a {
+  margin: 0 0.6rem;
+}
+
+/* BREADCUMB CSS END HERE */
+
+/* LOGIN & REGISTER FORM CSS START HERE*/
+
+.myPanelCont {
+  height: 40rem;
+  background: #ffdfd9;
+  display: grid;
+  place-items: center;
+}
+
+.loginPanel {
+  width: 435px;
+  padding: 1.4rem 2.5rem;
+  background: #000;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.loginPanel svg {
+  margin-bottom: 10px;
+  border: 2px Solid #fff;
+  padding: 2px;
+  font-size: 2.2rem;
+}
+
+.loginPanel h1 {
+  font-family: var(--headfont);
+  font-size: 1.9rem;
+  margin-bottom: 21px;
+}
+
+.loginLabel {
+  display: block;
+}
+
+.loginPanel .error-msg,
+.loginLabel  {
+  text-align: left;
+}
+
+.loginLabel,
+.loginCheck {
+  padding: 6px 0;
+}
+
+.bottom-text a,
+.loginCheck a {
+  color: #d6d6d6;
+  font-weight: 600;
+  margin-left: 3px;
+}
+
+.bottom-text a {
+  text-decoration: underline;
+}
+
+.bottom-text a:hover,
+.loginCheck a:hover {
+  color: #f93232;
+}
+
+.loginPanel .myBtn {
+  width: 100%;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+.loginPanel input[type="text"],
+.loginPanel input[type="password"],
+.loginPanel input[type="email"] {
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.login-lable {
+  font-weight: 500;
+}
+
+.login-checkbox input:checked + label {
+  font-weight: 500;
+}
+
+.login-checkbox span {
+  padding-left: 77px;
+}
+
+#passCheckBox {
+  margin-right: 3px;
+}
+
+.inputForgNote {
+  padding: 20px;
+  background-color: #fff8de;
+  color: red;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* REGISTER FORM */
+
+.loginPanel .state i.fa-lock-alt {
+  font-size: 25px;
+  height: 35px;
+  width: 35px;
+  padding: 3px;
+  border: 2px solid;
+  margin-top: -9px;
+}
+
+.register-pannel {
+  width: 560px;
+}
+
+/* LOGIN & REGISTER FORM CSS END HERE*/
+
+
+/* CART CSS */
+
+.cartdarkBg {
+  background-color: #eaeaea;
+}
+
+.myCartRow {
+  padding: 2.5rem 1.5rem;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.myCartBttmRow {
+  align-items: flex-start;
+  gap: 0 1.3rem;
+}
+
+.cartProductSec,
+.cardAddressSec,
+.cardSumSec {
+  background: #fff;
+}
+
+.cardSumSec {
+  margin-bottom: 0.6rem;
+}
+
+.cartFlexBox2 {
+  width: 420px;
+  flex-shrink: 0;
+}
+
+.cartHead {
+  padding: 0.8rem;
+  background: #000;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.cartHead h2 {
+  font-family: var(--headfont);
+  font-size: 1.5rem;
+}
+
+.cartInnerArea {
+  height: max-content;
+  display: flex;
+  border-bottom: 1px solid #d8d8d8;
+  margin: 0.5rem 0.5rem 0.8rem;
+}
+
+.cartImgSec {
+  width: 25%;
+  height: 215px;
+  text-align: center;
+}
+
+.cartTextSec {
+  width: 75%;
+}
+
+.cartTextSec,
+.cartImgSec {
+  padding: 10px;
+}
+
+.cartTitleSec {
+  font-size: 1.1rem;
+}
+
+.cartDiscPrice {
+  width: 260px;
+  text-align: right;
+}
+
+.cartPrice {
+  color: #696868;
+  text-decoration: line-through;
+  padding-left: 8px;
+}
+
+.cartTitleSec,
+.cartBottomTextBox .cartTextHead {
+  font-weight: 700;
+}
+
+.cartBottomTextBox .save-rs,
+.cartBottomTextBox {
+  padding: 10px 0;
+}
+
+.cartBottomTextBox .save-rs {
+  display: block;
+}
+
+/* EMPTY CART CSS  */
+
+.emptyCart {
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.emptyCart a {
+  text-decoration: underline;
+  line-height: 0;
+  color: var(--brandColor);
+}
+
+/* CART RESPONSIVE BUTTON */
+
+.cartResBtn {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 15px 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.cartResTotalSec,
+.cartResTotalSec a {
+  color: #fff;
+}
+
+.cartResTotalSec {
+  padding-bottom: 15px;
+}
+
+.cartResBtnSec .myBtn {
+  display: block;
+  margin: auto;
+}
+
+/* RES DISPLAY NONE */
+
+.cartResBtn,
+.cartResAddRow {
+  display: none;
+}
+
+/* CART RES ADDRESS CSS */
+
+.cartResAddRow {
+  padding: 10px 15px;
+  margin: 0px 0px 12px;
+  border: 3px solid var(--brandColor);
+  background: #fff;
+  gap: 16px;
+}
+
+.cartResAddRow span {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.cartResAddRow p {
+  padding-top: 5px;
+}
+.cartResAddBtn {
+  border: 1px solid #f93232;
+  border-radius: 5px;
+  padding: 5px 6px;
+  color: #f93232;
+  font-weight: 600;
+}
+
+.cartResAddBtn:hover {
+  color: #f93232;
+}
+
+/* PROMOCODE SIDEPANEL CSS */
+
+.myCartRow .promoModal {
+  right: 0;
+  padding-top: 2rem;
+  margin: auto;
+}
+
+.promoModal input {
+  width: 100%;
+  padding: 0.3rem;
+  outline: none;
+  border: 3px solid #000;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.promoModal input:focus {
+  border: 3px solid var(--brandColor);
+}
+
+.promoModal .myBtn {
+  width: 100%;
+}
+
+.promoModal .closebtn {
+  position: absolute;
+  top: -22px;
+  left: -292px;
+  font-size: 50px;
+  color: var(--brandColor);
+}
+
+.promoModal h1,
+.promoModal input,
+.promoModal .myBtn,
+.promoModal p {
+  width: 85%;
+  margin: auto;
+}
+
+.promoText {
+  color: #8f8f8f;
+  font-weight: 600;
+}
+
+.promoText:hover {
+  color: var(--brandColor);
+}
+
+/* CART COUNTER CSS */
+
+.counter {
+  width: 100px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px 12px;
+  height: 40px;
+  user-select: none;
+}
+
+.counter input {
+  width: 50px;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  outline: none;
+  caret-color: transparent;
+}
+
+.counter span {
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* CART TAG CSS */
+
+.cartTagSec a {
+  font-weight: 600;
+  color: dimgrey;
+}
+
+.cartTagSec a:hover {
+  color: var(--brandColor);
+}
+
+.cartTagSec span {
+  padding: 0 10px;
+}
+
+/* CART ADDRESS SEC CSS */
+
+.addAddrBtn,
+.addAddrBtn:hover {
+  color: #fff;
+}
+
+.addAddrBtn {
+  font-size: 0.9rem;
+  padding: 0.4rem;
+  border: 1px solid #fff;
+}
+
+.addAddrBtn:hover {
+  background-color: var(--brandColor);
+}
+
+.cartAddress {
+  padding: 0 1rem 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.cartAddress span {
+  font-weight: 700;
+}
+
+.cartAddress p {
+  margin-bottom: 10px;
+}
+
+.editAdd {
+  color: var(--brandColor);
+  padding: 0.5rem 0 0;
+}
+
+/* CART PRICE SUMMARY SEC CSS */
+
+.cartSumRow {
+  padding: 5px 10px;
+}
+
+.crtBestPrice {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f93232;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  margin: 10px;
+  padding: 10px 0;
+}
+
+.crtSavingPrice {
+  font-size: 18px;
+  font-weight: 600;
+  color: green;
+}
+
+.cartSecurity {
+  text-align: center;
+  padding: 0 0.7rem 1.5rem;
+}
+
+.cartSecurity svg {
+  font-size: 4rem;
+  color: green;
+  margin: 8px;
+}
+
+.cartSecurity p {
+  color: crimson;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* CART PAYMENT SEC CSS */
+
+.cartPaymentSec {
+  border: 1px solid #000;
+  margin: 0 10px 10px;
+  text-align: center;
+}
+
+.cartPaymentSec p {
+  font-family: var(--headfont);
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 14px;
+  text-align: center;
+}
+
+.cartPaymentSec span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #7b7b7b;
+  text-align: center;
+}
+
+.cartBtn {
+  width: 90%;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  color: var(--brandColor);
+  border: 2px solid var(--brandColor);
+  border-radius: 3rem;
+  padding: 1.25rem 1rem;
+  cursor: pointer;
+}
+
+.cartPayBtn {
+  background-color: var(--brandColor);
+  margin: 10px 0;
+}
+
+.cartPayBtn:hover {
+  background-color: #000;
+  border-color: #fff;
+  color: #fff;
+}
+
+.cartMoreBtn {
+  color: orangered;
+  border-color: orangered;
+  margin: 10px 0;
+}
+
+.cartMoreBtn:hover {
+  background-color: #ff9800;
+}
+
+.cartPayBtn,
+.cartMoreBtn:hover {
+  color: #fff;
+}
+
+/* CHECKOUT CSS */
+
+.checkoutFb1 .cartResAddRow {
+  display: flex;
+}
+
+.checkoutProductSec,
+.checkoutFb2 {
+  background: #fff;
+}
+
+.checkoutFb2 {
+  height: 100%;
+  text-align: center;
+}
+
+.checkoutBtn {
+  margin: 1.25rem 0;
+  background-color: #f93232;
+  border: none;
+}
+
+.checkoutBtn:hover,
+.checkoutBtn {
+  color: whitesmoke;
+}
+
+.checkoutQty {
+  padding: 0;
+}
+
+.checkoutProductSec .cartCounterSec {
+  display: none;
+}
+
+.checkoutProductSec .cartInnerArea {
+  align-items: center;
+  padding: 1rem 0;
+  margin: 0 0.5rem 12px;
+}
+
+/* SAVED ADDRESS CSS */
+
+.SaveAddrHead {
+  margin: 0;
+}
+
+.savedAddRow {
+  background-color: #fff;
+}
+
+.addBox {
+  margin-bottom: 15px;
+}
+
+.addAddressSec {
+  padding: 20px 20px 5px 20px;
+}
+
+.addAddress {
+  width: 300px;
+  border: 2px solid #d0d0d0;
+  padding: 90px 0px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 700;
+  color: #444444;
+}
+
+.addAddress:hover,
+.savedAddRow input:checked + label {
+  border: 2px solid #f93232;
+  background: #ff000005;
+  font-weight: normal;
+}
+
+.addAddress:hover .plusIcon,
+.addAddress:hover .text {
+  color: #f93232;
+}
+
+.addAddress .plusIcon {
+  font-size: 130px;
+  color: #a2a2a27d;
+  font-weight: 900;
+  line-height: 0px;
+}
+
+.savedAddrBox {
+  position: relative;
+}
+
+.savedAddrBox input {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.savedAddr {
+  text-align: left;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 38px 0px;
+}
+
+.savedAddr p {
+  padding: 0 0 10px 15px;
+}
+
+.savedAddr span,
+.addbtns {
+  font-weight: 600;
+}
+
+.addSeprator {
+  padding: 0 10px;
+  color: #a2a2a2d1;
+}
+
+.addbtns:hover {
+  color: #f93232;
+}
+
+/* CATEGORY PAGE CSS */
+
+.catRow {
+  align-items: flex-start;
+}
+
+.catProRow {
+  padding: 0.8rem 1rem 1rem;
+}
+
+.filterColumn, 
+.catProRow {
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.filterColumn {
+  width: 300px;
+  padding: 1rem 0;
+  flex-shrink: 0;
+}
+
+.filterColumn h2 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.catHead h1,
+.filterColumn h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--headfont);
+}
+
+.sortArea {
+  border-bottom: 1px solid #d4d4d4;
+  gap: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 20px;
+}
+
+.sortArea,
+.filterColumnHead {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.filterColumnHead {
+  padding-bottom: 0.7rem;
+  margin: auto;
+}
+
+.filterColumnHead .myBtn {
+  display: none;
+  margin: 0.7rem auto;
+  width: 6rem;
+  background-color: #fff;
+  color: var(--brandColor);
+  border: 2px solid var(--brandColor);
+  padding: 0.5rem 0;
+  justify-content: center;
+}
+
+.catHead p {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 5px 0;
+}
+
+.sortArea .sortHead {
+  font-weight: 600;
+}
+
+.sortArea span {
+  cursor: pointer;
+}
+
+.sortArea,
+.sortArea .sortHead,
+.sortArea .sortClearBtn {
+  padding-bottom: 0.2rem;
+}
+
+.sortArea span:hover,
+.sortArea span.active {
+  font-weight: 600;
+  color: var(--brandColor);
+  border-bottom: 2px solid var(--brandColor);
+}
+
+.sortArea .sortHead:hover {
+  color: #000;
+}
+
+.sortClearBtn {
+  display: none;
+}
+
+.catProRow .productBox {
+  width: 261px;
+}
+
+.catRow,
+.myStoreFlex {
+  gap: 1rem;
+}
+
+.filter-section-head {
+  font-size: 1.1rem;
+  color: #272525;
+  padding: 1rem 0.6rem;
+  display: flex;
+  border-top: 1px solid #d4d4d4;
+  font-weight: 600;
+  border-left: 4px solid transparent;
+}
+
+.filter-section-head.active,
+.filter-section-head:hover {
+  color: var(--brandColor);
+  border-left-color: var(--brandColor);
+}
+
+.filter-section-head .addressArrow {
+  font-size: 1.5rem !important;
+}
+
+.filter-section-head.active .addressArrow {
+  transform: rotate(180deg);
+}
+
+.filterItemCont {
+  display: none;
+}
+
+.filterItemContent {
+  padding: 0 0.9rem;
+}
+
+.filterItemContent {
+  margin: 0.5rem 0 1rem;
+}
+
+.filterItemLftPart {
+  /* margin: 0 15px; */
+}
+
+.filterItemLftPart input {
+  margin-right: 5px;
+}
+
+.filterMsg {
+  margin: auto;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Responsive Filter & Sort */
+
+.resBar {
+  /* display: none; */
+  width: 100%;
+  font-size: 16px;
+  position: fixed;
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.resBar,
+.resBar a {
+  color: #fff;
+}
+
+.resBar .popupModal {
+  color: #000;
+}
+
+.resBar svg {
+  font-size: 22px;
+  padding-right: 6px;
+}
+
+.resCatBt1,
+.resBtnSeprator,
+.resCatBt2 {
+  height: 42px;
+}
+
+.resCatBt1,
+.resCatBt2 {
+  width: 49%;
+}
+
+.resBtnSeprator {
+  width: 2%;
+}
+
+.resBar .proBuyBtn, 
+.resBar .proCrtBtn {
+  color: #000;
+  font-size: 16px;
+  border: none;
+  border-radius: 0;
+  height: 50px;
+  width: 50%;
+}
+
+.resBar .proBuyBtn {
+  color: #fff;
+}
+
+.resBtnProSep {
+  display: none;
+}
+
+.resBar .proCrtBtn:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.resBar .proBuyBtn:hover {
+  color: #fff;
+  background-color: red;
+}
+
+/* Sort & Filter Model Same Css  */
+
+.sortModalContBox,
+.filterModalContBox,
+.searchModalBox {
+  width: 100%;
+  top: 55%;
+  left: 0;
+  bottom: 0;
+  transform: none;
+  animation: slideIn 0.5s forwards;
+  /* animation: slideOut 0.5s linear forwards; */
+}
+
+/* .sortModalContBox.slideOut {
+    animation: slideOut 0.5s linear forwards;
+} */
+
+@keyframes slideIn {
+  0% {
+    transform: translate(0%, 100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+
+/* @keyframes slideOut {
+    0% {
+      transform: translate(0%, 0%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0%, 100%);
+      opacity: 1;
+    }
+} */
+
+.sortModalContBox .DescText,
+.sortModalContBox .sortHead,
+.filterModalContBox .filterColumnHead,
+.filterModalContBox .filterColumnHead h2,
+.filterModalContBox .DescText,
+.filterModalContBox .filter-section-head svg {
+  display: none;
+}
+
+/* Sort Modal  */
+
+.sortModalContSec .sortArea {
+  flex-direction: column;
+  border-bottom: none;
+  justify-content: flex-start;
+}
+
+.sortModalContSec .sortArea span {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #000;
+}
+
+.sortModalContSec .sortClearBtn {
+  border: 2px solid var(--brandColor);
+  border-radius: 25px;
+  padding: 8px 20px;
+  margin-top: 12px;
+}
+
+.sortModalContSec .sortClearBtn,
+.sortModalContSec .sortClearBtn:hover {
+  color: var(--brandColor);
+}
+
+/* Filter Modal  */
+
+.filterModalContBox,
+.searchModalContBox {
+  height: 100vh;
+  top: 0;
+  padding: 1rem 1.5rem 1rem 0;
+}
+
+.filterModalContBox .modalHeadSec h2 {
+  padding-left: 16px;
+}
+
+.filterModalContBox .filterColumn {
+  width: 100%;
+}
+
+.filterModalContBox .filterItem {
+  display: flex;
+  align-items: flex-start;
+}
+
+.filterModalContBox .filter-section-head {
+  width: 110px;
+  height: max-content;
+  flex-shrink: 0;
+}
+
+.filterModalContBox .filterItemSec {
+  position: relative;
+  height: 87vh;
+}
+
+.filterModalContBox .filterItemCont {
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 130px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0;
+  /* display: block; */
+}
+
+.filterModalContBox .filterItemContent::-webkit-scrollbar {
+  display: none;
+}
+
+.filterModalContBox .filterModalContSec {
+  overflow: auto;
+}
+
+.modalClsBtn {
+  position: absolute;
+  bottom: 24px;
+  right: 25px;
+}
+
+/* search Modal */
+
+.searchModalBox {
+  padding: 1rem;
+}
+
+/* .searchModalContBox {
+
+} */
+
+.searchHeadSec {
+  gap: 5px;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+}
+
+.searchResultSec {
+  width: 60%;
+  height: 90%;
+  margin: auto;
+  overflow-y: auto;
+}
+
+.searchModalError {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+#Search::-webkit-search-cancel-button {
+  font-size: 16px;
+}
+
+.proResult {
+  gap: 15px;
+  color: #535353;
+  margin-bottom: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--myBorderColor);
+}
+
+.proResImg {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+/* Product Box CSS */
+
+.productBox {
+  width: 270px;
+  text-align: center;
+  padding: 1rem 1rem 1.5rem;
+  border: solid 1px rgba(112, 112, 112, 0.38);
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.proBoxImg {
+  overflow: hidden;
+  height: 160px;
+}
+
+.proTextBox {
+  padding: 10px 0;
+  text-align: left;
+}
+
+.proTextBox h4 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #666;
+  line-height: 25px;
+  height: 50px;
+}
+
+.priceBox {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 5px 0 3px;
+}
+
+.priceBox .price {
+  font-size: 15px;
+  font-weight: 500;
+  color: #666;
+  text-decoration: line-through;
+}
+
+.priceBox .percentage-off {
+  color: #09ac63;
+  font-weight: 600;
+}
+
+.priceBox span {
+  padding-right: 5px;
+}
+
+.seller {
+  font-weight: bold;
+  margin-top: 5px;
+  color: #8c8787;
+}
+
+.proBoxBtn {
+  display: block;
+  width: 100% !important;
+  background: #f93232;
+  color: #fff;
+  padding: 10px !important;
+  font-size: 15px !important;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.proBoxBtn:hover {
+  color: #fff;
+}
+
+.seller span {
+  color: #4c4c4c;
+}
+
+.save-rs,
+.error-msg {
+  color: #f95700;
+  font-weight: bold;
+}
+
+.error-msg {
+  color: var(--brandColor);
+  display: none;
+}
+
+/* PRODUCT PAGE CSS */
+
+.proImgRow {
+  background-color: #fff;
+  align-items: flex-start;
+  padding-right: 10px;
+}
+
+.proImageSec {
+  width: 530px;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.proDetailSec {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.proBox {
+  border: 1px solid var(--myBorderColor);
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.proSec2 .proBox {
+  width: 420px;
+  height: 500px;
+  margin: 10px 10px 10px 0;
+}
+
+.proDetailSec h1 {
+  font-family: var(--headfont);
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #515151;
+}
+
+.proDetailSec .sale-price {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.proDetailSec .price,
+.proDetailSec .percentage-off {
+  font-size: 1.5rem;
+  padding-left: 5px;
+}
+
+.proDetailSec .priceBox {
+  padding: 12px 0 6px;
+}
+
+.soldBySec .proSellerHead {
+  font-size: 18px;
+}
+
+.proSaveRs {
+  width: max-content;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  background: orangered;
+  padding: 3px 5px;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.stock {
+  color: green;
+  padding-bottom: 10px;
+}
+
+.actionButton {
+  gap: 16px;
+}
+
+.actionButton .counter {
+  flex-shrink: 0;
+}
+
+.actionButton .myBtn {
+  padding: 0.7rem 0.5rem;
+  font-size: 18px;
+}
+
+.proCrtBtn {
+  border: 4px solid #565656;
+  background-color: #fff;
+  color: #5b5b5b;
+  opacity: 0.9;
+}
+
+.proCrtBtn:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.proBuyBtn {
+  border: 4px solid red;
+  background-color: red;
+}
+
+.proBuyBtn:hover {
+  background-color: #fff;
+  color: red;
+}
+
+.proDetailSec .cartResAddRow {
+  display: flex;
+}
+
+.proIconSec {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.icon-area {
+  text-align: center;
+}
+
+.icon-area p {
+  color: dimgray;
+}
+
+.proIconSec,
+.proDetailSec .checkoutAddRow,
+.proSellerBox,
+.proDetailSec .cartResAddRow {
+  border: 1px solid var(--myBorderColor);
+  margin: 15px 0;
+}
+
+.proIconSec svg {
+  font-size: 3rem;
+  color: #2d2d2d;
+}
+
+.proSellerHead {
+  padding: 10px;
+  border-bottom: 1px solid var(--myBorderColor);
+  font-family: var(--headfont);
+}
+
+.proSelData {
+  padding: 10px;
+  gap: 16px;
+  overflow-x: auto;
+  position: relative;
+}
+
+.proRelRow .productBox {
+  flex-shrink: 0;
+}
+
+.seller-left img {
+  width: auto;
+  height: 60px;
+  padding-right: 6px;
+}
+
+.seller-left span {
+  font-weight: 600;
+  color: #4c4c4c;
+}
+
+.proSelData a {
+  font-weight: 600;
+  color: #f93232;
+}
+
+.proSellerSec {
+  background-color: #fff;
+}
+
+.proSellerSec h4,
+.proSpecRow h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.proSellerSec a {
+  background: #f93232;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.proSpecRow {
+  background-color: #fff;
+}
+
+.proSpecRow h4 {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid var(--myBorderColor);
+  font-family: var(--headfont);
+}
+
+.proSpecRow h5 {
+  font-size: 20px;
+  color: var(--brandColor);
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.pro-tab-content {
+  width: 100%;
+  padding: 1.2rem 1.2rem 0.6rem;
+}
+
+.pro-tab-content tr {
+  padding-bottom: 15px;
+  display: flex;
+}
+
+.pro-table {
+  width: 100%;
+  text-align: left;
+}
+
+.pro-table th {
+  width: 200px;
+}
+
+.pro-table th,
+.pro-table td {
+  flex-shrink: 0;
+  font-size: 16px;
+}
+
+.pro-tab-content ul {
+  padding: 10px 0 0 40px;
+}
+
+.pro-tab-content ul li {
+  padding-bottom: 15px;
+}
+
+.pro-inner {
+  border-bottom: 1px solid var(--myBorderColor);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.proRelSec .proSellerHead {
+  margin-bottom: 10px;
+}
+
+.proRelRow h4 {
+  font-size: 15px;
+  font-weight: 500;
+  height: 50px;
+}
+
+.proRelSec {
+  margin-bottom: 0;
+}
+
+.proSec2 .proBox {
+  justify-content: center;
+  padding: 20px;
+}

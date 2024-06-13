@@ -1,0 +1,434 @@
+@media screen and (max-width: 1024px) {
+    html {
+      font-size: 15px;
+    }
+  
+    /* NAV CSS */
+  
+    .headerLeftSec {
+      flex-wrap: wrap;
+    }
+  
+    .navFlexItem2 {
+      width: 100vw;
+      margin: 0.5rem 0 0;
+      padding-bottom: 0.5rem;
+    }
+  
+    .navAddress {
+      margin: 0 1rem 0 0;
+    }
+  
+    .navFlexItem3 {
+      position: relative;
+      right: 16.5rem;
+      bottom: 1.5rem;
+    }
+  
+    /* HOME PAGE CSS  */
+  
+    .elecMainCatCont {
+      width: 80%;
+    }
+  
+    .homeHead h2 {
+      font-size: 2.8rem;
+    }
+  
+    /* Product Sec */
+  
+    .proImgRow {
+      flex-wrap: wrap;
+    }
+  
+    .proImageSec {
+      margin: auto;
+    }
+  
+    /* FOOTER CSS START HERE  */
+  
+    .footContentSec {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .footBox1,
+    .footBox2,
+    .footBox3,
+    .footBox4 {
+      width: 25%;
+    }
+  
+    .footBox5 {
+      width: 22rem;
+    }
+  
+    .footBox5 .head {
+      margin: 0 auto 1rem;
+    }
+  
+    .footBox p:hover {
+      font-size: 1rem;
+      border-bottom: none;
+    }
+  
+    .footAppSec {
+      display: flex;
+    }
+  
+    .footAppSec img {
+      padding-right: 0.5rem;
+    }
+  
+    .footAppSec img:hover {
+      width: 100%;
+    }
+  
+    .socialIconSec {
+      justify-content: center;
+    }
+  
+    .socialIconSec svg {
+      font-size: 3rem;
+    }
+  
+    .socialIconSec svg:hover {
+      color: var(--brandColor);
+    }
+  
+    /* CART CSS START HERE  */
+  
+    .myCartBttmRow {
+      flex-wrap: wrap;
+    }
+  
+    .cartFlexBox1,
+    .cartFlexBox2 {
+      width: 100%;
+    }
+  
+    .cartBtn {
+      width: 20rem;
+    }
+  }
+
+  
+  @media screen and (max-width: 880px) {
+    /* HOME PAGE CSS */
+  
+    .elecMainCatCont {
+      width: 90%;
+    }
+  
+    /* NAV SEARCH CSS  */
+  
+    .searchResultSec {
+      width: 80%;
+    }
+  
+    /* FOOTER */
+  
+    .footBox1,
+    .footBox2,
+    .footBox3,
+    .footBox4 {
+      width: 50%;
+    }
+  
+    .footBox5 {
+      width: 25rem;
+    }
+  
+    .footContentSec {
+      justify-content: flex-start;
+      gap: 16px 0;
+    }
+  }
+  
+  @media screen and (max-width: 780px) {
+    html {
+      font-size: 14px;
+    }
+  
+    /* HOME PAGE CSS  */
+  
+    .elecMainCatCont {
+      width: 95%;
+    }
+  
+    .catRow .filterColumn {
+      display: none;
+    }
+  
+    /* NAV SEARCH CSS  */
+  
+    .searchResultSec {
+      width: 90%;
+    }
+  }
+  
+
+  @media screen and (max-width: 610px) {
+    .proSec2 .proBox {
+      width: 395px;
+      height: 420px;
+    }
+  }
+
+  
+  @media screen and (max-width: 550px) {
+    
+    /* HOME PAGE CSS  */
+  
+    .elecFeaCatBox .homeImgSec {
+      width: 30%;
+    }
+  
+    .elecBannerSec {
+      width: 95%;
+    }
+  
+    .homeHead h2 {
+      font-size: 2.5rem;
+    }
+  
+    .homeHead h3 {
+      font-size: 2rem;
+    }
+  
+    .dummy,
+    .slideContainer:hover .slideIcon {
+      display: none;
+    }
+  
+    .proSlider .slideContainer {
+      gap: 0px;
+    }
+  
+    .proSlider .productBox {
+      width: 235px;
+    }
+  
+    .breadcumb-row,
+    .catHead,
+    .navFlexItem2 .navAddress,
+    .navFlexItem3 span {
+      display: none;
+    }
+  
+    .emptyCart {
+      display: block;
+    }
+  
+    .navFlexItem3 {
+      right: 3.6rem;
+    }
+  
+    .resAddSec {
+      margin: 0.2rem -0.6rem 0;
+    }
+  
+    .resAddSec {
+      display: flex;
+      width: 104%;
+      border: none;
+      border-radius: inherit;
+      background-color: #ffe2e2;
+    }
+  
+    .resAddSec span {
+      margin-left: 0.1rem;
+    }
+  
+    .nav {
+      padding: 0.4em 0.6rem 0;
+    }
+  
+    .myCartRow,
+    .catProRow {
+      padding: 0;
+    }
+  
+    /* Product Category */
+  
+    .proBoxBtn {
+      display: none;
+    }
+  
+    .catProRow {
+      width: 100%;
+    }
+  
+    .myStoreFlex {
+      gap: 0;
+    }
+  
+    .catProRow .productBox {
+      width: 50%;
+    }
+  
+    .productBox {
+      border: 1px solid #d2d2d2;
+      border-radius: 0px;
+      border-top: none;
+      border-left: none;
+      padding: 15px;
+    }
+  
+    .proTextBox {
+      padding: 10px 0 0;
+    }
+  
+    .proBoxImg {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    /* SINGLE PRODUCT PAGE CSS */
+  
+    .proImageSec {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+  
+    .proSec1 {
+      display: flex;
+    }
+  
+    .proSec2 .proBox {
+      margin: 10px;
+    }
+  
+    .actionButton a {
+      display: none;
+    }
+  
+    /* CART */
+  
+    .cartTitleSec {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .cartDiscPrice {
+      text-align: left;
+    }
+  
+    .cardAddressSec,
+    .crtHeadMain,
+    .cartPaymentSec,
+    .checkoutRow .cartResTotalSec,
+    .checkoutBtn {
+      display: none;
+    }
+  
+    .cartResBtn,
+    .cartCircle {
+      display: block !important;
+    }
+  
+    .cartResAddRow {
+      display: flex;
+    }
+  
+    .cartSumRowSec {
+      padding-bottom: 1rem;
+    }
+  
+    .cartSecurity {
+      background-color: #eee;
+      padding: 1rem 0.7rem 1.5rem;
+    }
+  
+    /* CHECKOUT */
+  
+    .checkoutProductSec .cartInnerArea {
+      height: 14rem;
+      margin-bottom: 12px;
+    }
+  
+    .checkoutFb2 .cartSecurity {
+      text-align: center;
+      padding: 0.7rem 0.7rem 1.8rem;
+      margin-top: 1rem;
+    }
+  
+    .cartResAddRow {
+      margin: 12px 0px;
+    }
+  
+    /* LOGIN  */
+
+    .myPanelCont {
+      height: max-content;
+      padding: 2rem 0;
+      display: block;
+  }
+
+    .loginPanel {
+      width: 100%;
+    }
+
+  }
+  
+  
+  @media screen and (max-width: 420px) {
+    /* HOME PAGE CSS  */
+  
+    .homeHead h2 {
+      font-size: 2.2rem;
+    }
+  
+    .homeHead h3 {
+      font-size: 1.8rem;
+    }
+  
+    /* NAV CSS */
+  
+    .nav svg {
+      font-size: 1.5rem;
+    }
+  
+    .navFlexItem3 {
+      right: 4.5rem;
+    }
+  
+    /* CATEGORY PAGE CSS */
+  
+    .productBox {
+      padding: 10px;
+    }
+  
+    .catProRow .proBoxImg {
+      height: 135px;
+    }
+  
+    /* SINGLE PRODUCT PAGE  */
+  
+    .pro-table th {
+      width: 165px;
+    }
+  
+    .pro-tab-content {
+      padding: 1rem 1rem 0.5rem;
+    }
+  
+    .proSec2 .proBox {
+      width: 92vw;
+      height: 365px;
+    }
+  
+    .proBox {
+      width: 70px;
+      height: 80px;
+    }
+  
+    /* FOOTER  */
+  
+    .footTop {
+      padding: 1.2rem 0;
+    }
+  }
+  
