@@ -7,7 +7,7 @@ import { CartContext } from "./state/context/CartContext";
 
 const root = reactDom.createRoot(document.querySelector("#root"));
 root.render(
-  <BrowserRouter >
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <AppContext>
       <CartContext>
         <App />
