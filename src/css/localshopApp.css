@@ -1780,7 +1780,7 @@ input[type="checkbox"] {
 /* Responsive Filter & Sort */
 
 .resBar {
-  /* display: none; */
+  display: none;
   width: 100%;
   font-size: 16px;
   position: fixed;

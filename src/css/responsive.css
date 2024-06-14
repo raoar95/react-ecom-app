@@ -219,6 +219,10 @@
     .emptyCart {
       display: block;
     }
+
+    .resBar {
+      display: flex;
+    }
   
     .navFlexItem3 {
       right: 3.6rem;
