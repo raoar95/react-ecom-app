@@ -10,7 +10,7 @@ const getCartLocalStorageData = () => {
 
     let CartStorageData = localStorage.getItem("myCartData");
 
-    if (CartStorageData.length === 0) {
+    if (!CartStorageData) {
         return [];
     }
 
