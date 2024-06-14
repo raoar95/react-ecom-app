@@ -7,7 +7,7 @@ import { CartContext } from "./state/context/CartContext";
 
 const root = ReactDom.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter basename="/react-ecom-app">
     <AppContext>
       <CartContext>
         <App />
