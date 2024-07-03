@@ -26,8 +26,8 @@
 body {
   font-family: var(--textfont);
   font-weight: 500;
-  user-select: none;
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 a,
@@ -687,6 +687,7 @@ input[type="checkbox"] {
 }
 
 /* animation: slideIn 0.5s forwards; */
+
 
 /* SLIDER CSS END HERE */
 
