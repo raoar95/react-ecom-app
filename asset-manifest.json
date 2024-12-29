@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/raoar95/react-ecom-app/static/css/main.79779074.css",
-    "main.js": "/raoar95/react-ecom-app/static/js/main.e4aa63ae.js",
-    "static/media/vivo.jpg": "/raoar95/react-ecom-app/static/media/vivo.9ad0c3bec4a86a3e5098.jpg",
-    "static/media/Lc-laptop.png": "/raoar95/react-ecom-app/static/media/Lc-laptop.4654221d3c5b78fce665.png",
-    "static/media/sph-lc.png": "/raoar95/react-ecom-app/static/media/sph-lc.94c9c6960982ff1cdbbe.png",
-    "static/media/heaphones-lc.png": "/raoar95/react-ecom-app/static/media/heaphones-lc.8d8f8064dfb81fe4520b.png",
-    "static/media/logo.png": "/raoar95/react-ecom-app/static/media/logo.41b4cc53abc894cfb539.png",
-    "index.html": "/raoar95/react-ecom-app/index.html",
-    "main.79779074.css.map": "/raoar95/react-ecom-app/static/css/main.79779074.css.map",
-    "main.e4aa63ae.js.map": "/raoar95/react-ecom-app/static/js/main.e4aa63ae.js.map"
+    "main.css": "/react-ecom-app/static/css/main.79779074.css",
+    "main.js": "/react-ecom-app/static/js/main.d0a2e5d9.js",
+    "static/media/vivo.jpg": "/react-ecom-app/static/media/vivo.9ad0c3bec4a86a3e5098.jpg",
+    "static/media/Lc-laptop.png": "/react-ecom-app/static/media/Lc-laptop.4654221d3c5b78fce665.png",
+    "static/media/sph-lc.png": "/react-ecom-app/static/media/sph-lc.94c9c6960982ff1cdbbe.png",
+    "static/media/heaphones-lc.png": "/react-ecom-app/static/media/heaphones-lc.8d8f8064dfb81fe4520b.png",
+    "static/media/logo.png": "/react-ecom-app/static/media/logo.41b4cc53abc894cfb539.png",
+    "index.html": "/react-ecom-app/index.html",
+    "main.79779074.css.map": "/react-ecom-app/static/css/main.79779074.css.map",
+    "main.d0a2e5d9.js.map": "/react-ecom-app/static/js/main.d0a2e5d9.js.map"
   },
   "entrypoints": [
     "static/css/main.79779074.css",
-    "static/js/main.e4aa63ae.js"
+    "static/js/main.d0a2e5d9.js"
   ]
 }
