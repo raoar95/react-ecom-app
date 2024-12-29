@@ -4,6 +4,8 @@ import App from "./app/localShopApp";
 import { BrowserRouter } from "react-router-dom";
 import { AppContext } from "./state/context/AppContext";
 import { CartContext } from "./state/context/CartContext";
+import "./css/localshopApp.css";
+import "./css/responsive.css";
 
 const root = ReactDom.createRoot(document.getElementById("root"));
 root.render(
