@@ -9,7 +9,7 @@ import "./css/responsive.css";
 
 const root = ReactDom.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter basename="/react-ecom-app/">
+  <BrowserRouter>
     <AppContext>
       <CartContext>
         <App />
